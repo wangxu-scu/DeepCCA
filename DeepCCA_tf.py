@@ -56,7 +56,7 @@ class DeepCCA(object):
             h2 = layers.fully_connected(self.input_2, hidden_layer_sizes2, activation_fn=tf.nn.sigmoid)
             o2 = layers.fully_connected(h2, out_layer_sizes2, activation_fn=None)
 
-        # CalculateMean cross-entropy loss
+        # Calculat Correlations
         with tf.name_scope("loss"):
             r1 = 1e-4
             r2 = 1e-4
